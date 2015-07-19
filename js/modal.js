@@ -3,6 +3,9 @@ $(document).ready(function() {
    //this will call our toggleFields function every time the selection value of our underAge field changes
     $("#plus1").change(function() { toggleFields(); });
 
+    $("#submit-button").submit(function() {
+      
+    });
 });
 //this toggles the visibility of our parent permission fields depending on the current selected value of the underAge field
 function toggleFields()
