@@ -87,13 +87,13 @@ $include-html-global-classes: $include-html-classes;
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // We use these to define default font stacks
-// $font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-// $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+$font-family-sans-serif: "Surveyor Text A", "Surveyor Text B", Helvetica, Roboto, Arial, sans-serif;
+$font-family-serif: "Surveyor Text A", "Surveyor Text B", Georgia, Cambria, "Times New Roman", Times, serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
 // We use these to define default font weights
-// $font-weight-normal: normal;
-// $font-weight-bold: bold;
+$font-weight-normal: normal;
+$font-weight-bold: 700;
 
 // $white       : #FFFFFF;
 // $ghost       : #FAFAFA;
@@ -115,8 +115,10 @@ $include-html-global-classes: $include-html-classes;
 // $jet         : #222222;
 // $black       : #000000;
 
+$tracymatt-bg   : #EDE6E1;
+
 // We use these as default colors throughout
-// $primary-color: #008CBA;
+$primary-color: #5C5C60;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -124,8 +126,8 @@ $include-html-global-classes: $include-html-classes;
 // $info-color: #a0d3e8;
 
 // We use these to control various global styles
-// $body-bg: $white;
-// $body-font-color: $jet;
+$body-bg: $tracymatt-bg;
+$body-font-color: $primary-color;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
@@ -213,7 +215,7 @@ $include-html-global-classes: $include-html-classes;
 // $header-font-family: $body-font-family;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
-// $header-font-color: $jet;
+$header-font-color: $primary-color;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
@@ -732,7 +734,7 @@ $include-html-global-classes: $include-html-classes;
 // $include-html-inline-list-classes: $include-html-classes;
 
 // We use this to control the margins and padding of the inline list.
-// $inline-list-top-margin: 0;
+$inline-list-top-margin: rem-calc(50);
 // $inline-list-opposite-margin: 0;
 // $inline-list-bottom-margin: rem-calc(17);
 // $inline-list-default-float-margin: rem-calc(-22);
