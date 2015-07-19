@@ -1,9 +1,15 @@
 .fp-body {
-  background-image: url(../images/TracyMatt-096.jpg);
+  background-image: url(../img/fphero.jpg);
   background-size: cover;
   background-position: center top;
   height: 100%;
   width: 100%;
+}
+
+@media (max-width: 600px) {
+	.fp-body {
+		background-image: url(../img/hero1.jpg);
+	}
 }
 
 .tracy-matt {
@@ -11,19 +17,31 @@
 }
 
 .enter-row {
-  margin-top: 220% !important;
+  margin-top: 150% !important;
+}
+
+@media (max-width: 600px) {
+	.enter-row {
+		margin-top: 200%;
+	}
 }
 
 .enter-button {
   border-width: 2px;
-  border-color: black;
+  border-color: $primary-color;
   background-color: transparent;
   opacity: 90%;
-  color: black;
+  color: $primary-color;
 }
 
 .tm-top {
 	margin-bottom: rem-calc(30);
+}
+
+@media (max-width: 600px) {
+	.tm-top {
+		padding-top: rem-calc(50);
+	}
 }
 
 .inline-list a {
@@ -34,4 +52,14 @@
 	font-style: italic;
 	line-height: rem-calc(28);
 	font-size: rem-calc(30);
+}
+
+.tm-button {
+	text-transform: uppercase;
+	font-weight: $font-weight-bold;
+}
+
+.bottom-pad {
+	padding-top: rem-calc(100);
+	padding-bottom: rem-calc(100);
 }
