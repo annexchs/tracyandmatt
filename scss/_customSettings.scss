@@ -100,7 +100,11 @@
 }
 
 .list-deck {
-	font-style: italic;
-	line-height: rem-calc(20);
+	font-style: normal;
+	line-height: rem-calc(10);
 	font-size: rem-calc(20);
+}
+
+.selected {
+	text-decoration: underline;
 }
