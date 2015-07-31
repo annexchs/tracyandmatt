@@ -1,29 +1,64 @@
+
 .fp-body {
-  background-image: url(../img/fphero.jpg);
-  background-size: cover;
+	background-image: url(../img/hero1.jpg);
+	background-size: cover;
   background-position: center top;
+  background-repeat: no-repeat;
   height: 100%;
   width: 100%;
 }
-
-@media (max-width: 600px) {
-	.fp-body {
-		background-image: url(../img/hero1.jpg);
-	}
+.enter-row {
+  position: absolute;
+  top: 85vh;
+  min-width: 80vw;
+  margin-left: 10vw;
 }
+
+.banner-row {
+  position: absolute;
+  top: 5vh;
+  width: 100vw;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  vertical-align: middle;
+}
+
 
 .tracy-matt {
   margin-top: 10%;
 }
 
-.enter-row {
-  margin-top: 150% !important;
+@media (min-width: 600px) {
+  .fp-body {
+    background-image: url(../img/fphero.jpg);
+    background-size: cover;
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .enter-row {
+    position: absolute;
+    right: 20vw;
+    top: 85vh;
+    display: block;
+    min-width: 30vw;
+  }
+  
+  .banner-row {
+    position: absolute;
+    right: 20vw;
+    top: 10vh;
+    width: 30vw;
+    padding: 0;
+  }
 }
 
-@media (max-width: 600px) {
-	.enter-row {
-		margin-top: 200%;
-	}
+@media (min-width: 1420px) {
+  .fp-body {
+    background-position: center center;
+  }
 }
 
 .enter-button {
