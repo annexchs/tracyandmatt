@@ -9,6 +9,10 @@
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6752452/701828/css/fonts.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script language="javascript" type="text/javascript" src="js/modal.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+
+
   </head>
   <body>
 	  <section id="carousel">
@@ -66,36 +70,27 @@
     
     <div id="RSVPModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
       <h1 id="modalTitle">RSVP</h1>
-      <form>
+      <form id="rsvp-form" action="mail-handler.php" method="post">
         <div class="row">
-          <div class="large-5 columns">
-            <label>First Name
-              <input type="text"/>
-            </label>
-          </div>
-          <div class="large-1 columns">
-            <label>M.I.
-              <input type="text"/>
-            </label>
-          </div>
           <div class="large-6 columns">
-            <label>Last Name
-              <input type="text"/>
+            <label>Name
+              <input type="text" id="name" name="name" placeholder="First Last"/>
             </label>
           </div>
         </div>
         <div class="row">
           <div class="large-6 columns">
             <label>Email
-              <input id="email" type="email"/>
+              <input id="email" name="email" type="email"/>
             </label>
           </div>
           <div class="large-6 columns">
             <label>Phone Number
-              <input type="tel"/>
+              <input type="tel" name="phone"/>
             </label>
           </div>
         </div>
+        
         <div class="row">
           <div class="large-1 columns" id="plus1-column">
             <label>+1?
@@ -105,22 +100,61 @@
             </label>
           </div>
           </div>
-          <div id="plus1First" class="large-5 columns">
-            <label>First Name
-              <input type="text"/>
-            </label>
-          </div>
-          <div id="plus1Middle" class="large-1 columns">
-            <label>M.I.
-              <input type="text"/>
-            </label>
-          </div>
-          <div id="plus1Last" class="large-5 columns">
-            <label>Last Name
-              <input type="text"/>
+          <div id="plus1First" class="large-11 columns">
+            <label>Name
+              <input type="text" name="guest-1"/>
             </label>
           </div>
         </div>
+        
+        <div class="row">
+          <div class="large-1 columns" id="plus2-column">
+            <label>+1?
+            <div class="switch">
+            <input id="plus2" type="checkbox">
+            <label for="plus2"></label>
+            </label>
+          </div>
+          </div>
+          <div id="plus2First" class="large-11 columns">
+            <label>Name
+              <input type="text" name="guest-2"/>
+            </label>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="large-1 columns" id="plus3-column">
+            <label>+1?
+            <div class="switch">
+            <input id="plus3" type="checkbox">
+            <label for="plus3"></label>
+            </label>
+          </div>
+          </div>
+          <div id="plus3First" class="large-11 columns">
+            <label>Name
+              <input type="text" name="guest-3"/>
+            </label>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="large-1 columns" id="plus4-column">
+            <label>+1?
+            <div class="switch">
+            <input id="plus4" type="checkbox">
+            <label for="plus4"></label>
+            </label>
+          </div>
+          </div>
+          <div id="plus4First" class="large-11 columns">
+            <label>Name
+              <input type="text" name="guest-4"/>
+            </label>
+          </div>
+        </div>
+        
         <div class="row">
           <div class="large-12 columns">
             <p>If you are unfortunately unable to attend, simply don't fill out this form. If you have any questions, please email us at cruse.mt@gmail.com</p>
@@ -128,7 +162,7 @@
         </div>
         <div class="row">
           <div class="large-4 columns">
-            <a id="submit-button" class="button round tm-button">Submit</a>
+	         <input type="submit" class="button round tm-button" name="submit" value="Submit">
           </div>
         </div>
       </form>
@@ -152,7 +186,7 @@
         </div>
         <div class="row">
           <div class="large-4 large-offset-8 columns">
-	          <p class="right"><em>Photos by TTT</em></p>	          
+	          <p class="right"><em>Photos by Jennifer Smith with Carolina Photosmith</em></p>	          
           </div>
         </div>
                 <div class="row">
